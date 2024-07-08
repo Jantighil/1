@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!-- <link rel="stylesheet" href="/k.css"> -->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="https://private-user-images.githubusercontent.com/108949387/340662090-81dd956a-90a6-4b60-bcf5-7af02dab48af.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAwNzgwNTIsIm5iZiI6MTcyMDA3Nzc1MiwicGF0aCI6Ii8xMDg5NDkzODcvMzQwNjYyMDkwLTgxZGQ5NTZhLTkwYTYtNGI2MC1iY2Y1LTdhZjAyZGFiNDhhZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNFQwNzIyMzJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00OGI3NWQxYTdjNWI2OTg0YzI0YTc1NzJiMTU5ZTgzNWQ4YWNjYWE1NWE3ZjcxZmQzNDkxNGJiNDkzYzQ0MzZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.sUeqMXaVlgGDWfq8oWVb5apes-4-BULGnyUwGgsWQHU" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="stylesheet" href="/static/style1.css">
+        <link rel="stylesheet" href="/static/style2.css">
+        <!-- <link rel="stylesheet" href="/static/style3.css"> -->
+
+        <title>Responsive headphones landing page</title>
+    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="https://github.com/bedimcode/responsive-landing-page-headphones/blob/main/assets/img/logo.png" alt="">
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#specs" class="nav__link">Specs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#case" class="nav__link">Case</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div>
+                        <img src="https://private-user-images.githubusercontent.com/108949387/340662090-81dd956a-90a6-4b60-bcf5-7af02dab48af.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTk2OTQyNjYsIm5iZiI6MTcxOTY5Mzk2NiwicGF0aCI6Ii8xMDg5NDkzODcvMzQwNjYyMDkwLTgxZGQ5NTZhLTkwYTYtNGI2MC1iY2Y1LTdhZjAyZGFiNDhhZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjI5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYyOVQyMDQ2MDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02Zjg5ZWMwNjNmY2Y3ZDM0OWUyMWZmNzRiYmI5ZDE1NWFmZjRiZGQ2MmNkMTIxMjBmMjJlOTQ5MmI3MTMzZGZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.wJWaZF1bBldSLLdRabcfVMsFARWABqKyRejUg4BhnHI" style="padding-top: 30%; width: 41%;" alt="" class="home__img">
+                    </div>
+
+                    <div class="home__data">
+                        <div class="home__header">
+                            <h1 class="home__title">Phish</h1>
+                            <h2 class="home__subtitle">Natomy</h2>
+                        </div>
+
+                        <div class="home__footer">
+                            <h3 class="home__title-description">Overview</h3>
+                            <p class="home__description">Deep Dive Phishing Detection: Unveiling the Anatomy of suspicious Emails and URLs for enhanced Cyber Vigilance. 
+                            </p>
+                            <a href="#" class="button button--flex">
+                                <span class="button--flex">
+                                    <i class="ri-shopping-bag-line button__icon"></i></i>
+                                </span>
+                                <span class="home__price">Let's unveil Phishing</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== SPONSOR ===============-->
+            <section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <img  src="https://private-user-images.githubusercontent.com/108949387/345738920-2d9ead7a-7a9d-4629-b20c-7c768817b95a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAwNzg4MzIsIm5iZiI6MTcyMDA3ODUzMiwicGF0aCI6Ii8xMDg5NDkzODcvMzQ1NzM4OTIwLTJkOWVhZDdhLTdhOWQtNDYyOS1iMjBjLTdjNzY4ODE3Yjk1YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNFQwNzM1MzJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yMzYyMmU4NjZiMzlmM2I1NTY2OGQzYjhmNzQ1Yzk3NzA5OTlmNmQ1NjJkMDMxYTZhODJjMTNkYWYwYTc4ZjYzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.kBsqlO5DbgSnf1isiSPnT_-SGVzAG8ypb9EC6fqnS6c" alt="" class="sponsor__img">
+                    <img style="height: 20%;" src="https://private-user-images.githubusercontent.com/108949387/345740622-fd68b082-46de-42b8-9dec-2001c8f270bf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAwNzkxNTgsIm5iZiI6MTcyMDA3ODg1OCwicGF0aCI6Ii8xMDg5NDkzODcvMzQ1NzQwNjIyLWZkNjhiMDgyLTQ2ZGUtNDJiOC05ZGVjLTIwMDFjOGYyNzBiZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNFQwNzQwNThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jM2VkM2ZmNzU2MDA1NDdkM2ZkMGFhZTBmZDhmYzBhNjNkMmJlYWMyYTE0NDM0OGI2MTgxOTczYjg3MmYzNjBlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.qktwiNW9KpvSTsqKEUYZQJk-eVJmxhimCqAcvhEagPQ">
+                    <img src="https://private-user-images.githubusercontent.com/108949387/345742370-7a04f14b-59cc-4c14-8f40-c0b483b8859f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAwNzk1MDksIm5iZiI6MTcyMDA3OTIwOSwicGF0aCI6Ii8xMDg5NDkzODcvMzQ1NzQyMzcwLTdhMDRmMTRiLTU5Y2MtNGMxNC04ZjQwLWMwYjQ4M2I4ODU5Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNFQwNzQ2NDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NzllYmIyNzNkYjdhMmUzMWIwZDRiMjRkMTVhNDk0NDE5ZWM3Mzk3MzA2YzJmMjVjZWVlYjFmNWEyOGZjODk3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.bA-OFwKQ1bxnbg6H5kz9uvw2V6g_cWlUADWros5Y5MA" alt="" class="sponsor__img">
+                    <img src="https://github.com/bedimcode/responsive-landing-page-headphones/blob/main/assets/img/sponsor4.png?raw=true" alt="" class="sponsor__img">
+                </div>
+            </section>
+
+            <!--=============== SPECS ===============-->
+            <section class="specs section grid" id="specs">
+                <h2 class="section__title section__title-gradient">Email Classifier</h2>
+
+                <div class="specs__container container grid">
+                    <div class="specs__content grid">
+                        <h1></h1>
+                        <form onsubmit="event.preventDefault(); checkEmail();">
+                            <div class="textarea-container">
+                                <textarea id="email_content" rows="10" cols="50" placeholder="Paste your email content here"></textarea>
+                                <i class="fas fa-upload upload-icon" onclick="triggerFileUpload()"></i>
+                                <input type="file" id="file" style="display:none;" onchange="uploadFile()">
+                            </div>
+                            <button class="btn" type="submit" style="background-color: #007bff; color: white; padding: 5px 10px; margin: 5px 0; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; width: 80%;">Check Email</button>
+                        </form>
+                    </div>
+
+                    <div>
+                        <img src="https://private-user-images.githubusercontent.com/108949387/340665754-c771c530-c806-46fb-966c-69c5f921a924.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAwNzgzMDMsIm5iZiI6MTcyMDA3ODAwMywicGF0aCI6Ii8xMDg5NDkzODcvMzQwNjY1NzU0LWM3NzFjNTMwLWM4MDYtNDZmYi05NjZjLTY5YzVmOTIxYTkyNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNFQwNzI2NDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMzg4MGE3MGRjZmM1ZTBhYzk4NzQ0ZDk3MTEyY2Y2MjJiMzcyNGI1NTMzM2M1M2Q5ZTI3YjAxZDYxY2Q5M2IwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.IAQc06boV-Sl2BttSAa6afdIASsCwPADfPxquC9DHno" style="height: 100%;" alt="" class="specs__img">
+                    </div>
+                </div>
+                <div>
+                    <hr>
+                        <div id="result" style=" justify-content: center; align-items: center; margin-left: 11%;"></div>
+                </div>
+            </section>
+
+            <!--=============== CASE ===============-->
+            <section class="case section grid" id="case" style="margin-top: -10%;">
+                <h2 class="section__title section__title-gradient">URL Checker</h2>
+
+                <div class="case__container container grid">
+                    <div>
+                        <img style="width: 270px" src="https://private-user-images.githubusercontent.com/108949387/340857113-cfe12877-aadd-496b-ac82-bc2c1d4d29f9.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAwNzg1NTMsIm5iZiI6MTcyMDA3ODI1MywicGF0aCI6Ii8xMDg5NDkzODcvMzQwODU3MTEzLWNmZTEyODc3LWFhZGQtNDk2Yi1hYzgyLWJjMmMxZDRkMjlmOS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNFQwNzMwNTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mN2RjYTJmM2JkYWU1OGZiZjNkMjA5MGMzMzVmOTJhM2FkM2YyNzk1ZjgyYmU2OWE3OGQzMmRhN2Y3NmVmNzUyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.prNi4m0JRjLY4j6y2LbVD4lqPgyZl16-co-6PBr9UV0" alt="" class="case__img">
+                    </div>
+
+                    <!-- <div class="case__data"> -->
+                        <div class="container">
+                            <h1></h1>
+                            <label for="url">Enter URL:</label>
+                            <input type="text" id="url" placeholder="https://www.example.com">
+                            <button onclick="checkUrl()">Check URL</button>
+                            <div class="result1" id="results"></div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== DISCOUNT ===============-->
+            <section class="discount section">
+                <div class="discount__container container grid">
+                    <div class="container">
+                        <p>Our cyber awareness video teaches essential strategies to protect your data and privacy. Stay informed and secure online.</p>
+                        <button style="color: #007bff; height: 30%; "><h1 style="color: black;">Cyber Awareness Video</h1></button>
+                    </div>
+
+                    <img src="https://github.com/bedimcode/responsive-landing-page-headphones/blob/main/assets/img/discount.png?raw=true" alt="" class="discount__img">
+                </div>
+            </section>
+
+            <!--=============== PRODUCTS ===============-->
+            <section class="products section" id="products">
+                <h2 class="section__title section__title-gradient products__line">
+                    Choose <br> Your Style
+                </h2>
+
+                <div class="products__container container grid">
+                    <article class="products__card">
+                        <div class="products__content">
+
+                            <a href="https://phish1-ecru.vercel.app/"><img style="width: 12000px;" src="https://private-user-images.githubusercontent.com/108949387/340802692-c240652e-30a5-4100-b6c2-b14de30a257a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg3Mzg0MDQsIm5iZiI6MTcxODczODEwNCwicGF0aCI6Ii8xMDg5NDkzODcvMzQwODAyNjkyLWMyNDA2NTJlLTMwYTUtNDEwMC1iNmMyLWIxNGRlMzBhMjU3YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOFQxOTE1MDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMzE5MDJiMzAwZDNjZTg1MWU2MWFiMTU0NWE2NzJlMzc5Mjg2MWQxNzE3NWQ5NjMzYzA2YTFhYjNlOWUxNzUyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.LnWuovqDMoMEp5Lb5o3YMMlsHhIsgWqg16NMzHFnqcI" alt="" class="products__img">
+                            </a>
+                            
+                            <h3 class="products__title">Game</h3>
+                            <span class="products__price">Game</span>
+
+                            <button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <a href="https://phish-gamma.vercel.app/"><img style="width: 10000px;" href="https://phish-gamma.vercel.app/" src="https://private-user-images.githubusercontent.com/108949387/340804320-ba9e9480-ea17-4ac3-8aa3-904a9d4a6c0e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg3Mzg3NzMsIm5iZiI6MTcxODczODQ3MywicGF0aCI6Ii8xMDg5NDkzODcvMzQwODA0MzIwLWJhOWU5NDgwLWVhMTctNGFjMy04YWEzLTkwNGE5ZDRhNmMwZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOFQxOTIxMTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zOTY0YmRjNTU3OGU0MGRkNzM4ZGMyODQ3ZGM2MWQwZTcwYWRhZGE5NjhiNzRiNTMzNGFhYzI3Y2UyMjZmZmVkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.4lI2ud6rp-QH5FRbrEctgvkEckV-jXcGZU7eoZEI7a4" alt="" class="products__img">
+                            </a>
+                            
+                            <h3 class="products__title">QUIZES</h3>
+                            <span class="products__price">quizes</span>
+
+                            <button class="button button--flex products__button" href ="https://phish-gamma.vercel.app/">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <a href="/templates/how.html"><img style="width: 120px;" src="https://private-user-images.githubusercontent.com/108949387/340808988-2ccb0620-4b4b-486a-9c4c-b1b53a1ab770.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg3Mzk4NzMsIm5iZiI6MTcxODczOTU3MywicGF0aCI6Ii8xMDg5NDkzODcvMzQwODA4OTg4LTJjY2IwNjIwLTRiNGItNDg2YS05YzRjLWIxYjUzYTFhYjc3MC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOFQxOTM5MzNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNTdmMjRhZjgxZTQyMzM4YjIzZGUxZGQ5YzAwYTU1NWNiNjE3M2ZkMTZhOWU4MzY4ZmEwZDdkNmUxMDIwYmY0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.c9s7565MDCd2cUSROYVYwplbVRwc4N7via15UJBn7AU" alt="" class="products__img">
+                            </a>
+                            
+                            <h3 class="products__title">Video</Video></h3>
+                            <span class="products__price">Video</span>
+
+                            <button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <a href="https://phish2.vercel.app/"><img style="width: 120px;" src="https://private-user-images.githubusercontent.com/108949387/340813020-ede32e78-79bf-4567-89f9-ac8d655ad7a7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg3NDA3NjUsIm5iZiI6MTcxODc0MDQ2NSwicGF0aCI6Ii8xMDg5NDkzODcvMzQwODEzMDIwLWVkZTMyZTc4LTc5YmYtNDU2Ny04OWY5LWFjOGQ2NTVhZDdhNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOFQxOTU0MjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05YTk3MDhiMmY3ODI2Y2EyNjBjMWFmMjQ3ZWJiNjVhMDcxMGUwNDMzYTAzMTU0YTNkMGMyY2JmN2I1NmM5ODkzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.nSb5X5x3sQO43xSpOCKDakWds10zTgNx7yUhlUOna_4" alt="" class="products__img">
+                            </a>
+                            
+                            <h3 class="products__title">Blue</h3>
+                            <span class="products__price">$249</span>
+
+                            <button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="https://github.com/bedimcode/responsive-landing-page-headphones/blob/main/assets/img/product5.png?raw=true" alt="" class="products__img">
+
+                            <h3 class="products__title">Twilight gray</h3>
+                            <span class="products__price">$249</span>
+
+                            <button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <a href="#" class="footer__logo">
+                    <img src="https://github.com/bedimcode/responsive-landing-page-headphones/blob/main/assets/img/logo.png?raw=true" alt="">
+                </a>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Products</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Headphones</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Earphones</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Earbuds</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Accesories</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Support</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Product help</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Register</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Updates</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Provides</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <form action="" class="footer__form">
+                        <input type="email" placeholder="Email" class="footer__input">
+                        <button class="button button--flex">
+                            <i class="ri-send-plane-line button__icon"></i> Subscribe
+                        </button>
+                    </form>
+
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copy">
+                <a href="https://www.youtube.com/c/Bedimcode/" target="_blank" class="footer__copy-link">© Bedimcode. All right reserved</a>
+            </p>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script>
+            CLOUDINARY_URL= `cloudinary://465399367875161:VPNKZbug5kWdImXqr_KY8aWTOvs@jantighil`
+            async function checkEmail() {
+    const emailContent = document.getElementById('email_content').value.trim();
+    const fileInput = document.getElementById('file');
+
+    if (emailContent === '' && fileInput.files.length === 0) {
+        document.getElementById('result').innerHTML = `
+            <p>Please enter email content or upload a document.</p>
+        `;
+        return;
+    }
+
+    if (emailContent !== '') {
+        const response = await fetch('/check_email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `email_content=${encodeURIComponent(emailContent)}`,
+        });
+        const result = await response.json();
+        displayResult(result);
+    } else if (fileInput.files.length > 0) {
+        uploadFile();
+    }
+}
+
+async function uploadFile() {
+    const fileInput = document.getElementById('file');
+    if (fileInput.files.length > 0) {
+        const formData = new FormData();
+        formData.append('file', fileInput.files[0]);
+
+        const response = await fetch('/upload', {
+            method: 'POST',
+            body: formData,
+        });
+        const result = await response.json();
+        displayResult(result);
+    }
+}
+
+function displayResult(result) {
+    let resultHTML = '';
+
+    if (result.result === 'Phishing') {
+        resultHTML += `<p>The email is classified as: <strong>${result.result}</strong></p>`;
+    } else if (result.result === 'Sensitive') {
+        resultHTML += `<p>The email contains the following sensitive phrase: <strong>${result.phrase}</strong></p>`;
+    } else {
+        resultHTML += `<p>The email is classified as: <strong>Safe</strong></p>`;
+    }
+
+    if (result.found_phrases.length > 0) {
+        resultHTML += `<p>Found phrases:</p>`;
+        resultHTML += `<ul>`;
+        result.found_phrases.forEach(phrase => {
+            resultHTML += `<li>${phrase} - Reason: ${result.reasons[phrase]}</li>`;
+        });
+        resultHTML += `</ul>`;
+    } else {
+        resultHTML += `<p>No suspicious phrases found.</p>`;
+    }
+
+    document.getElementById('result').innerHTML = resultHTML;
+}
+
+function triggerFileUpload() {
+    document.getElementById('file').click();
+}
+function checkUrl() {
+    const url = document.getElementById('url').value;
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = 'Checking...';
+
+    fetch('/check_url', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ url: url })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'legitimate') {
+            resultDiv.innerHTML = `<p class="legitimate">Legitimate URL</p>`;
+        } else {
+            resultDiv.innerHTML = `<p class="phishing">Phishing URL</p>`;
+        }
+        const explanations = data.explanation.map(exp => `<li>${exp}</li>`).join('');
+        resultDiv.innerHTML += `<ul>${explanations}</ul>`;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        resultDiv.innerHTML = '<p class="phishing">An error occurred. Please try again.</p>';
+    });
+} 
+
+        </script>
+        <script>
+         
+        </script>
+        <script src="script.js"></script>
+        <!-- <script src="/script1.js"></script> -->
+        <!-- <script src="/script2.js"></script> -->
+    </body>
+</html>
